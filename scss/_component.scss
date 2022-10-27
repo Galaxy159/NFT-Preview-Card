@@ -1,0 +1,75 @@
+.component {
+  display: grid;
+  padding: 2.4rem;
+  text-align: left;
+  &__img {
+    height: 30.2rem;
+    margin-bottom: 2.4rem;
+    border-radius: 0.8rem;
+  }
+  &__headline {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $color-white;
+    margin-bottom: 1.6rem;
+  }
+  &__description {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: $color-text-main;
+    margin-bottom: 2.4rem;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid #2e405a;
+    &--price {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      align-items: center;
+
+      gap: 0.648rem;
+      color: cyan;
+      &-icon {
+      }
+      &-text {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+    &--timeleft {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      align-items: center;
+
+      gap: 0.77rem;
+      color: $color-text-main;
+      &-icon {
+      }
+      &-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+  }
+  &__creator {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    &--img {
+      height: 3.3rem;
+      border: 1px solid $color-white;
+      border-radius: 50%;
+    }
+    &--text {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-text-main;
+      & span {
+        color: $color-white;
+      }
+    }
+  }
+}

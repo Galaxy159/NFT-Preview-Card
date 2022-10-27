@@ -1,0 +1,53 @@
+// Colors:
+$color-background-main: #0d192b;
+$color-background-card: #14253d;
+$color-blue-dark: #2f415b;
+$color-text-main: #8bacd9;
+$color-white: #ffffff;
+
+// fonts:
+$font-primary: "Outfit";
+
+// media queries:
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  background-color: $color-background-main;
+}
+
+.container {
+  width: 35rem;
+  height: 59.6rem;
+  border-radius: 1.5rem;
+  background-color: $color-background-card;
+  margin: 15.2rem auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $color-white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
