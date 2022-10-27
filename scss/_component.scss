@@ -6,25 +6,87 @@
     height: 30.2rem;
     margin-bottom: 2.4rem;
     border-radius: 0.8rem;
+    overflow: hidden;
+    cursor: url(../images/Pointer.svg), auto;
+    position: relative;
+
+    @include respond(phone) {
+      height: 27.8rem;
+    }
+
+    & img {
+      height: 30.2rem;
+
+      @include respond(phone) {
+        height: 27.8rem;
+      }
+    }
+
+    &--overlay {
+      //   display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 255, 255, 0.5);
+      opacity: 0;
+      transition: all 0.5s ease;
+
+      & img {
+        position: absolute;
+        height: 4.8rem;
+        top: calc(50% - 2.4rem);
+        left: calc(50% - 2.4rem);
+      }
+
+      &:hover,
+      :active {
+        opacity: 1;
+      }
+    }
   }
   &__headline {
     font-size: 2.2rem;
     font-weight: 600;
     color: $color-white;
     margin-bottom: 1.6rem;
+    cursor: url(../images/Pointer.svg), auto;
+    transition: all 0.2s;
+
+    @include respond(phone) {
+      margin-bottom: 1.2rem;
+    }
+
+    &:hover,
+    :active {
+      color: cyan;
+    }
   }
+
   &__description {
+    font-weight: 300;
     font-size: 1.8rem;
     line-height: 2.6rem;
     color: $color-text-main;
     margin-bottom: 2.4rem;
+
+    @include respond(phone) {
+      margin-bottom: 1.6rem;
+    }
   }
+
   &__details {
     display: flex;
     justify-content: space-between;
     padding-bottom: 2.4rem;
     margin-bottom: 1.6rem;
     border-bottom: 1px solid #2e405a;
+
+    @include respond(phone) {
+      padding-bottom: 1.6rem;
+    }
+
     &--price {
       display: grid;
       grid-template-columns: min-content max-content;
@@ -37,6 +99,10 @@
       &-text {
         font-size: 1.6rem;
         font-weight: 600;
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+        }
       }
     }
     &--timeleft {
@@ -51,6 +117,10 @@
       &-text {
         font-size: 1.6rem;
         font-weight: 400;
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -67,8 +137,20 @@
       font-size: 1.6rem;
       font-weight: 400;
       color: $color-text-main;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+
       & span {
         color: $color-white;
+        cursor: url(../images/Pointer.svg), auto;
+        transition: all 0.2s;
+
+        &:hover,
+        :active {
+          color: cyan;
+        }
       }
     }
   }

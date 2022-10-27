@@ -41,12 +41,19 @@ body {
   border-radius: 1.5rem;
   background-color: $color-background-card;
   margin: 15.2rem auto;
+
+  @include respond(phone) {
+    width: 32.7rem;
+    height: 54.3rem;
+    margin: 6.2rem auto;
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
   color: $color-white;
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
