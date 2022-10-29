@@ -40,7 +40,7 @@ body {
   height: 59.6rem;
   border-radius: 1.5rem;
   background-color: $color-background-card;
-  margin: 15.2rem auto;
+  margin: 15.2rem auto 0 auto;
 
   @include respond(phone) {
     width: 32.7rem;

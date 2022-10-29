@@ -21,7 +21,7 @@ body {
   height: 59.6rem;
   border-radius: 1.5rem;
   background-color: #14253d;
-  margin: 15.2rem auto;
+  margin: 15.2rem auto 0 auto;
 }
 @media (max-width: 30em) {
   .container {
