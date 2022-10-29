@@ -32,10 +32,13 @@ body {
 }
 
 .attribution {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translateX(50%);
   font-size: 11px;
   text-align: center;
   color: #ffffff;
-  margin-top: 25rem;
 }
 
 .attribution a {
